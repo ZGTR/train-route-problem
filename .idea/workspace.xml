@@ -29,7 +29,7 @@
     <SUITE FILE_PATH="coverage/train$Unittest_GraphImportTest_test_nr_routes_with_max_stops.coverage" NAME="Unittest GraphImportTest.test_nr_routes_with_max_stops Coverage Results" MODIFIED="1519681909645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../train-route-problem/test" />
     <SUITE FILE_PATH="coverage/train$Unittests_in_test_graph_importer__1_.coverage" NAME="Unittests in test_graph_importer (1) Coverage Results" MODIFIED="1519567056125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../train-route-problem/test" />
     <SUITE FILE_PATH="coverage/train$graph_importer.coverage" NAME="graph_importer Coverage Results" MODIFIED="1519564174374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../train-route-problem/src/controller" />
-    <SUITE FILE_PATH="coverage/train$Unittests_in_test_graph_operations.coverage" NAME="Unittests in test_graph_operations Coverage Results" MODIFIED="1519681949179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../train-route-problem/test" />
+    <SUITE FILE_PATH="coverage/train$Unittests_in_test_graph_operations.coverage" NAME="Unittests in test_graph_operations Coverage Results" MODIFIED="1519682072852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../train-route-problem/test" />
     <SUITE FILE_PATH="coverage/train$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1519558596894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../train-route-problem" />
     <SUITE FILE_PATH="coverage/train$graph_operations.coverage" NAME="graph_operations Coverage Results" MODIFIED="1519573663447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../train-route-problem/src/controller" />
     <SUITE FILE_PATH="coverage/train$Unittest_GraphImportTest_test_distances.coverage" NAME="Unittest GraphImportTest.test_distances Coverage Results" MODIFIED="1519657815098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../train-route-problem/test" />
@@ -44,23 +44,9 @@
       <file leaf-file-name="test_graph_operations.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../train-route-problem/test/test_graph_operations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph_operations.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../train-route-problem/src/controller/graph_operations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="87" column="62" lean-forward="true" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-321">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,8 +54,8 @@
       <file leaf-file-name="test_graph_importer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../train-route-problem/test/test_graph_importer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -130,10 +116,10 @@
         <option value="$PROJECT_DIR$/../train-route-problem/src/controller/graph_importer.py" />
         <option value="$PROJECT_DIR$/../train-route-problem/src/controller/NodeNameNotExist.py" />
         <option value="$PROJECT_DIR$/../train-route-problem/src/controller/NodeNameNotExistError.py" />
-        <option value="$PROJECT_DIR$/../train-route-problem/test/test_graph_importer.py" />
         <option value="$PROJECT_DIR$/../train-route-problem/src/Exceptions/NodeNameNotExistError.py" />
         <option value="$PROJECT_DIR$/../train-route-problem/src/controller/graph_operations.py" />
         <option value="$PROJECT_DIR$/../train-route-problem/test/test_graph_operations.py" />
+        <option value="$PROJECT_DIR$/../train-route-problem/test/test_graph_importer.py" />
       </list>
     </option>
   </component>
@@ -750,9 +736,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_GraphImportTest_test_node_name_not_exist_should_cause_exception - 2018.02.26 at 22h 43m 05s.xml">
-      <configuration name="Unittest GraphImportTest.test_node_name_not_exist_should_cause_exception" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittest_GraphImportTest_test_node_name_not_exist_should_cause_exception - 2018.02.26 at 22h 43m 19s.xml">
       <configuration name="Unittest GraphImportTest.test_node_name_not_exist_should_cause_exception" configurationId="tests" />
     </history-entry>
@@ -780,6 +763,9 @@
     <history-entry file="Unittests_in_test_graph_operations - 2018.02.26 at 22h 52m 29s.xml">
       <configuration name="Unittests in test_graph_operations" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_graph_operations - 2018.02.26 at 22h 54m 33s.xml">
+      <configuration name="Unittests in test_graph_operations" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1440" height="823" extended-state="0" />
@@ -789,10 +775,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35430917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35430917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22389127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22389127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -985,16 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../train-route-problem/test/test_graph_importer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../train-route-problem/src/controller/graph_importer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1007,21 +983,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../train-route-problem/src/controller/graph_operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="87" column="62" lean-forward="true" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
+        <state relative-caret-position="328">
+          <caret line="80" column="38" lean-forward="true" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../train-route-problem/test/test_graph_operations.py">
+    <entry file="file://$PROJECT_DIR$/../train-route-problem/test/test_graph_importer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../train-route-problem/test/test_graph_operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-321">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,5 @@
 import unittest
 
-from src.Exceptions import NodeNameNotExistError
 from src.controller.graph_importer import GraphImporter
 from src.controller.graph_operations import GraphOperations, NO_SUCH_ROUTE
 
