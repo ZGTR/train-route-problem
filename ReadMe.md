@@ -18,13 +18,13 @@ Though the problem is simple. OOP patters are followed with backend-style setup.
 
 
 ## Algorithms
-The algorithms are farily simple and straight forward. Since this is written in python, it makes is fairly short. In under 100 loc we capture the whole functionality needed for this problem. In `class GraphOperations` you can find the basic algorithms for graph traversal. Most notably functions are:
-- `get_distance`: Get the distance between a series of stops 'A-B-C'. Mainly iterating the the list provided and accumulating the weights.
+The algorithms are farily simple and straightforward. Since this is written in python, it makes it fairly short. In under 100 loc we capture the whole functionality needed for this problem. In `class GraphOperations` you can find the basic algorithms for graph traversal. Most notable functions are:
+- `get_distance`: Get the distance between a series of stops 'A-B-C'. Mainly iterating through the list provided and accumulating the weights.
 - `discover_routes`: The most important function. It's the recursion function that discover all the routes between two points (start and end) with `min_nr_stops=1`, `max_nr_stops=sys.maxsize`, `max_distance=sys.maxsize`. Defaults are there in the function signature to make simple call like the following possible (for test case #10 for example:)
 ```
 self.graph_operations.discover_routes('C', 'C', max_distance=29)
 ```
-- `shortest_routes_distance`: calls `discover_routes` and getting the shortest one after calling `get_distance` for each discovered route.
+- `shortest_routes_distance`: calls `discover_routes`, get the shortest one after calling `get_distance` for each discovered route.
 
 
 
@@ -47,7 +47,8 @@ python -m unittest discover /Users/mohammadshaker/PycharmProjects/train-route-pr
 
 ### Break down into end to end tests
 
-The following is only the most important tests.
+The following are the most important test:
+
 1- with `test_distances`, we test the cases 1 through 5:
 
 ```
