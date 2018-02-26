@@ -25,59 +25,42 @@ Though the problem is simple. OOP patters are followed with backend-style setup.
 cd train-route-problem
 ```
 
-2- run all the tests (2 files) with:
+2- run all the tests (2 files with 7 tests to cover the 10 cases):
 ```
 python -m unittest discover /Users/mohammadshaker/PycharmProjects/train-route-problem/test
 ```
 
 
-
 ### Break down into end to end tests
 
-Explain what these tests test and why
+1- with `test_distances`, we test the cases 1 through 5:
 
 ```
-Give an example
+self.assertEqual(self.graph_operations.get_distance(_split('A-B-C')), 9)
+self.assertEqual(self.graph_operations.get_distance(_split('A-D')), 5)
+self.assertEqual(self.graph_operations.get_distance(_split('A-D-C')), 13)
+self.assertEqual(self.graph_operations.get_distance(_split('A-E-B-C-D')), 22)
+self.assertEquals(self.graph_operations.get_distance(_split('A-E-D')), NO_SUCH_ROUTE)
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+2- with `test_nr_routes_with_max_stops`, we test the cases 6 and 7:
 
 ```
-Give an example
+self.assertEqual(len(self.graph_operations.discover_routes('C', 'C', 1, 3)), 2)
+self.assertEqual(len(self.graph_operations.discover_routes('A', 'C', 4, 4)), 3)
+```
+1- with `test_distances`, we test the cases 1 through 5:
+
+```
+self.assertEqual(self.graph_operations.shortest_routes_distance('A', 'C'), 9)
+self.assertEqual(self.graph_operations.shortest_routes_distance('B', 'B'), 9)
+```
+1- with `test_distances`, we test the cases #10 (`max_distance=29`, since the max is included and therefore `<30`):
+
+```
+self.assertEqual(len(self.graph_operations.discover_routes('C', 'C', max_distance=29)), 7)
 ```
 
-## Deployment
+## Questions
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* For any question please contact me via: `mohammadshakergtr`
