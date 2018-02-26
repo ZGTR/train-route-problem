@@ -12,7 +12,6 @@ class GraphOperations:
     def __init__(self, graph):
         self.graph = graph
 
-    # TODO: remove
     def _clean_is_visited(self):
         for key, node in self.graph.nodes.items():
             node.is_visited = False
@@ -82,7 +81,7 @@ class GraphOperations:
             if min_nr_stops <= len(current_route) <= max_nr_stops:
                 if self._get_distance(current_route) <= max_distance:
                     self._print_route(current_route)
-                    matched_routes.append(self._copy_route(current_route))
+                    matched_routes.append(list(current_route))
 
         if len(current_route) > max_nr_stops:
             return
@@ -94,17 +93,10 @@ class GraphOperations:
         for key, edge in current_node.edges.items():
             next_node = edge.destination
 
-            # TODO: fix copy
-            route = self._copy_route(current_route)
+            route = list(current_route)
             route.append(next_node)
             self._discover_routes(next_node, end_node, min_nr_stops, max_nr_stops, max_distance, route,
                                   matched_routes)
-
-    def _copy_route(self, route):
-        copy = []
-        for node in route:
-            copy.append(node)
-        return copy
 
     def _print_routes(self, routes_list):
         for route in routes_list:

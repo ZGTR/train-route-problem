@@ -15,7 +15,7 @@ class GraphImportTest(unittest.TestCase):
         self.graph = importer.build_graph()
         self.graph_operations = GraphOperations(self.graph)
 
-    @unittest.skip
+    # @unittest.skip
     def test_distances(self):
         self.assertEqual(self.graph_operations.get_distance(_split('A-B-C')), 9)
         self.assertEqual(self.graph_operations.get_distance(_split('A-D')), 5)
@@ -28,12 +28,12 @@ class GraphImportTest(unittest.TestCase):
         self.assertEqual(len(self.graph_operations.discover_routes('C', 'C', 2, 4)), 2)
         self.assertEqual(len(self.graph_operations.discover_routes('A', 'C', 5, 5)), 3)
 
-    @unittest.skip
+    # @unittest.skip
     def test_shortest_path(self):
         self.assertEqual(self.graph_operations.shortest_routes('A', 'C'), 9)
         self.assertEqual(self.graph_operations.shortest_routes('B', 'B'), 9)
 
-    @unittest.skip
+    # @unittest.skip
     def test_nr_routes_with_max_distance(self):
         self.assertEqual(len(self.graph_operations.discover_routes('C', 'C', max_distance=29)), 7)
 
