@@ -1,6 +1,6 @@
 import os
 import sys
-from src.Exceptions.NodeNameNotExistError import NodeNameNotExistError
+from src.exceptions.NodeNameNotExistError import NodeNameNotExistError
 from src.model.graph import Graph
 
 NO_SUCH_ROUTE = 'NO SUCH ROUTE'
