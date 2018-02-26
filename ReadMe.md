@@ -16,32 +16,21 @@ ptyh`src` with:
 
 ### Prerequisites
 
-```
-python 3+ can work.
+`python 3.+` can work.
 
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
+1- via command line, navigate to the directory:
+```
+cd train-route-problem
+```
 
-Explain how to run the automated tests for this system
+2- run all the tests (2 files) with:
+```
+python -m unittest discover /Users/mohammadshaker/PycharmProjects/train-route-problem/test
+```
+
+
 
 ### Break down into end to end tests
 
