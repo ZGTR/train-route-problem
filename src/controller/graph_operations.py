@@ -1,7 +1,6 @@
 import os
-
 import sys
-
+from src.Exceptions.NodeNameNotExistError import NodeNameNotExistError
 from src.model.graph import Graph
 
 NO_SUCH_ROUTE = 'NO SUCH ROUTE'
@@ -16,9 +15,18 @@ class GraphOperations:
         for key, node in self.graph.nodes.items():
             node.is_visited = False
 
+    def _validate_nodes_names(self, nodes_names_list):
+        for name in nodes_names_list:
+            # If the node not in the graph nodes, raise an exception
+            if name not in self.graph.nodes:
+                raise NodeNameNotExistError("A node with a name '{0}' doesn't exist".format(name))
+
     def get_distance(self, nodes_names_list):
+        self._validate_nodes_names(nodes_names_list)
+
         nodes_list = []
         for name in nodes_names_list:
+            # If the node not in the graph nodes, raise an exception
             if name not in self.graph.nodes:
                 return NO_SUCH_ROUTE
             nodes_list.append(self.graph.nodes[name])
@@ -44,7 +52,8 @@ class GraphOperations:
 
         return distance
 
-    def shortest_routes(self, start, end):
+    def shortest_routes_distance(self, start, end):
+        self._validate_nodes_names([start, end])
         all_routes = self.discover_routes(start, end, max_nr_stops=len(self.graph.nodes))
         min_distance = sys.maxsize
         shortest_route = None
@@ -57,19 +66,14 @@ class GraphOperations:
 
         return min_distance
 
-
     def discover_routes(self, start, end, min_nr_stops=2, max_nr_stops=sys.maxsize, max_distance=sys.maxsize):
+        self._validate_nodes_names([start, end])
         self._clean_is_visited()
         matched_routes = []
         current_node = self.graph.nodes[start]
         end_node = self.graph.nodes[end]
 
         self._discover_routes(current_node, end_node, min_nr_stops, max_nr_stops, max_distance, [current_node], matched_routes)
-
-        print "---------------\n"
-        self._print_routes(matched_routes)
-        print "---------------\n"
-
         return matched_routes
 
     def _discover_routes(self, current_node, end_node, min_nr_stops, max_nr_stops, max_distance,
@@ -99,12 +103,9 @@ class GraphOperations:
                                   matched_routes)
 
     def _print_routes(self, routes_list):
-        for route in routes_list:
-            self._print_route(route)
+        [self._print_route(route) for route in routes_list]
 
     def _print_route(self, route):
         str = ''
-        for node in route:
-            str += node.name + '-'
-        # str.remove[:-1]
+        [str.join(node.name + '-') for node in route]
         print str

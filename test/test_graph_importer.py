@@ -20,6 +20,5 @@ class GraphImportTest(unittest.TestCase):
         self.assertIn('E', node_a_edges)
         self.assertNotIn('C', node_a_edges)
 
-
 if __name__ == "__main__":
     unittest.main()

@@ -10,7 +10,7 @@ class GraphImporter:
 
     def __init__(self, path=default_path):
         this_folder = os.path.dirname(os.path.abspath(__file__))
-        my_file = os.path.join(this_folder, default_path)
+        my_file = os.path.join(this_folder, path)
 
         with open(my_file, 'r') as content:
             self.graph_repr = content.read()

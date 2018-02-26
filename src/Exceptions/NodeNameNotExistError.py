@@ -1,0 +1,3 @@
+
+class NodeNameNotExistError(Exception):
+    pass
