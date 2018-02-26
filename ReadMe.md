@@ -5,13 +5,13 @@ This document describes the design behind my solution for the train routes probl
 ## Project Structure
 
 Though the problem is simple. OOP patters are followed with backend-style setup. Therefore you can find two seperate directories:
-'src' with:
+`src` with:
 - model: The basic data structure for the problem with graph (a hashmap of nodes), node (a hashmap of edges) and edge (linking source node with the destination for a given weight.)
 - controllers: with graph_importer (to handle file import and serving as a simple graph factory) and graph_operations (for the different operation we want to implement like shortest_distance, discover_route,.. etc.)
 - data: contains the graph representation in a text file.
 - exceptions: for our custom exceptions. Currently it only has one simple exception of NodeNameNotExistsError.
 
-and 'test'.
+and `test`.
 
 ### Prerequisites
 
