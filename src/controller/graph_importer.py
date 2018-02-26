@@ -1,4 +1,5 @@
 import os
+import errno
 from src.model.graph import Graph
 
 default_path = '../data/graph.txt'
@@ -8,8 +9,6 @@ class GraphImporter:
     graph_edges = ''
 
     def __init__(self, path=default_path):
-        # TODO: check if file exists
-
         this_folder = os.path.dirname(os.path.abspath(__file__))
         my_file = os.path.join(this_folder, default_path)
 
