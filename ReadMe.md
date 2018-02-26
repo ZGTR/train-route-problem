@@ -16,6 +16,17 @@ Though the problem is simple. OOP patters are followed with backend-style setup.
 - `test_graph_importer`
 - `test_graph_opertaions`: for all the test cases from the document
 
+
+## Algorithms
+The algorithms are farily simple and straight forward. Since this is written in python, it makes is fairly short. In under 100 loc we capture the whole functionality needed for this problem. In `class GraphOperations` you can find the basic algorithms for graph traversal. Most notably functions are:
+- `get_distance`: 
+- `shortest_routes_distance`: 
+- `discover_routes`: The most important function. It's the recursion function and discover all the routes between two points with `min_nr_stops=1`, `max_nr_stops=sys.maxsize`, `max_distance=sys.maxsize`. Defaults are there in the function signature to make simple call like this possible (for test case #10 for example:)
+```
+self.graph_operations.discover_routes('C', 'C', max_distance=29)
+```
+
+
 ### Prerequisites
 
 `python 3.+` can work.
