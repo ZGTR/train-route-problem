@@ -7,12 +7,14 @@ This document describes the design behind my solution for the train routes probl
 Though the problem is simple. OOP patters are followed with backend-style setup. Therefore you can find two seperate directories:
 
 1- `src` with:
-- **model**: The basic data structure for the problem with `graph` (a hashmap of nodes), `node` (a hashmap of edges) and `edge` (linking source node with the destination for a given weight.)
-- **controllers**: with `graph_importer` (to handle file import and serving as a simple graph factory) and `graph_operations` (for the different operation we want to implement like `shortest_distance`, `discover_route`,.. etc.)
-- **data**: contains the graph representation in a text file.
-- **exceptions**: for our custom exceptions. Currently it only has one simple exception of `NodeNameNotExistsError`.
+- **model** directory: The basic data structure for the problem with `graph` (a hashmap of nodes), `node` (a hashmap of edges) and `edge` (linking source node with the destination for a given weight.)
+- **controllers** directory: with `graph_importer` (to handle file import and serving as a simple graph factory) and `graph_operations` (for the different operation we want to implement like `shortest_distance`, `discover_route`,.. etc.)
+- **data** directory: contains the graph representation in a text file.
+- **exceptions** directory: for our custom exceptions. Currently it only has one simple exception of `NodeNameNotExistsError`.
 
-2- and `test`.
+2- and `test` with:
+- `test_graph_importer`
+- `test_graph_opertaions`: for all the test cases from the document
 
 ### Prerequisites
 
@@ -33,6 +35,7 @@ python -m unittest discover /Users/mohammadshaker/PycharmProjects/train-route-pr
 
 ### Break down into end to end tests
 
+The following is only the most important tests.
 1- with `test_distances`, we test the cases 1 through 5:
 
 ```
@@ -49,17 +52,18 @@ self.assertEquals(self.graph_operations.get_distance(_split('A-E-D')), NO_SUCH_R
 self.assertEqual(len(self.graph_operations.discover_routes('C', 'C', 1, 3)), 2)
 self.assertEqual(len(self.graph_operations.discover_routes('A', 'C', 4, 4)), 3)
 ```
-1- with `test_distances`, we test the cases 1 through 5:
+3- with `test_shortest_path`, we test the cases 8 and 9:
 
 ```
 self.assertEqual(self.graph_operations.shortest_routes_distance('A', 'C'), 9)
 self.assertEqual(self.graph_operations.shortest_routes_distance('B', 'B'), 9)
 ```
-1- with `test_distances`, we test the cases #10 (`max_distance=29`, since the max is included and therefore `<30`):
+4- with `test_nr_routes_with_max_distance`, we test the case #10 (`max_distance=29`, since the max is included and therefore `<30`):
 
 ```
 self.assertEqual(len(self.graph_operations.discover_routes('C', 'C', max_distance=29)), 7)
 ```
+
 
 ## Questions
 
