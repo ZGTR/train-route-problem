@@ -66,7 +66,7 @@ class GraphOperations:
 
         return min_distance
 
-    def discover_routes(self, start, end, min_nr_stops=2, max_nr_stops=sys.maxsize, max_distance=sys.maxsize):
+    def discover_routes(self, start, end, min_nr_stops=1, max_nr_stops=sys.maxsize, max_distance=sys.maxsize):
         self._validate_nodes_names([start, end])
         self._clean_is_visited()
         matched_routes = []
@@ -82,12 +82,12 @@ class GraphOperations:
             return
 
         if current_node == end_node:
-            if min_nr_stops <= len(current_route) <= max_nr_stops:
+            if min_nr_stops <= len(current_route) - 1<= max_nr_stops:
                 if self._get_distance(current_route) <= max_distance:
                     self._print_route(current_route)
                     matched_routes.append(list(current_route))
 
-        if len(current_route) > max_nr_stops:
+        if len(current_route) - 1> max_nr_stops:
             return
 
         if self._get_distance(current_route) > max_distance:

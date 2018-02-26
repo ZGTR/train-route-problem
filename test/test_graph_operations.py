@@ -25,8 +25,8 @@ class GraphImportTest(unittest.TestCase):
         self.assertEquals(self.graph_operations.get_distance(_split('A-E-D')), NO_SUCH_ROUTE)
 
     def test_nr_routes_with_max_stops(self):
-        self.assertEqual(len(self.graph_operations.discover_routes('C', 'C', 2, 4)), 2)
-        self.assertEqual(len(self.graph_operations.discover_routes('A', 'C', 5, 5)), 3)
+        self.assertEqual(len(self.graph_operations.discover_routes('C', 'C', 1, 3)), 2)
+        self.assertEqual(len(self.graph_operations.discover_routes('A', 'C', 4, 4)), 3)
 
     def test_shortest_path(self):
         self.assertEqual(self.graph_operations.shortest_routes_distance('A', 'C'), 9)
@@ -39,6 +39,10 @@ class GraphImportTest(unittest.TestCase):
         with self.assertRaises(Exception) as ex:
             self.graph_operations.get_distance(_split('A-K'))
         self.assertEquals(ex.exception.message, "A node with a name 'K' doesn't exist")
+
+        with self.assertRaises(Exception) as ex:
+            self.graph_operations.get_distance(_split('J'))
+        self.assertEquals(ex.exception.message, "A node with a name 'J' doesn't exist")
 
 if __name__ == "__main__":
     unittest.main()
