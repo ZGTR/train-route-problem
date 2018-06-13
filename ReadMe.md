@@ -41,7 +41,7 @@ cd train-route-problem
 
 2- run all the tests (2 files with 7 tests to cover the 10 cases):
 ```
-python -m unittest discover /Users/mohammadshaker/PycharmProjects/train-route-problem/test
+python -m unittest discover /Users/path/to/test
 ```
 
 
